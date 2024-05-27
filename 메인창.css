@@ -28,7 +28,19 @@
 .engbutton:active {
     background-color: rgb(163, 163, 163);
 }
-div {
+.bread {
+    border: 1.5px solid black;
+    width: 275px;
+    margin-top: 10px;
+    margin-right: inherit;
+}
+.cookie {
+    border: 1.5px solid black;
+    width: 275px;
+    margin-top: 10px;
+    margin-right: inherit;
+}
+.candy {
     border: 1.5px solid black;
     width: 275px;
     margin-top: 10px;
