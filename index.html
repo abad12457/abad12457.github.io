@@ -2,8 +2,11 @@
     <head>
         <title>HBG</title>
         <meta charset="UTF-8">
+        <!-- viewport 설정 (핸드폰과 컴퓨터 화면에 맞춰 화면 변경) -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- css 외부 링크 설정 -->
         <link rel="stylesheet" href="메인창.css">
+        <!-- 파비콘 설정 -->
         <link rel="icon" type="image/x-con" href="./favicon.ico">
         <style>
             .eng {
@@ -18,22 +21,31 @@
         </style>
     </head>
     <body>
+    
     <h1>Home Bakery Guide</h1>
+    
     <hr>
+
     <p class="kr">해당 사이트는 원하는 베이킹 레시피를 조리 환경에 따라 빠르게 찾을 수 있도록 하기 위하여 제작되었습니다. 해당 페이지 사용법에 대한 설명은 밑에 설명되어 있으니 확인해주시길 바랍니다. 언어는 현재 한국어와 영어만을 지원하고 있습니다.</p>
     <p class="eng">The site is designed to help you quickly find the baking recipe you want depending on your cooking environment. The instructions on how to use the page are explained below, so please check them out. The language currently only supports Korean and English.</p>
+    
     <hr>
+
     <h2 class="kr">언어</h2>
     <h2 class="eng">Language</h2>
 
     <button onclick="krlang()" class="lang">한국어</button> <button onclick="englang()" class="lang">English</button>
+    
     <hr>
+
     <h2 class="kr">종류</h2>
     <h2 class="eng">Kind</h2>
 
     <button class="engbutton" onclick="clbread()">bread</button> <button class="engbutton" onclick="clcookie()">cookie</button> <button class="engbutton" onclick="clcandy()">candy</button>
     <button class="button" onclick="clbread()">빵</button> <button class="button" onclick="clcookie()">과자</button> <button class="button" onclick="clcandy()">사탕</button>
+    
     <hr>
+
     <h2 class="kr">조리도구</h2>
     <h2 class="eng">cooking utensils</h2>
 
@@ -41,27 +53,48 @@
     <button class="button" onclick="cloven()">오븐</button> <button class="button" onclick="clmini()">미니오븐</button> <button class="button" onclick="clno()">오븐 X</button>
     
     <div class="bread con">
+        <!-- bread 메뉴 레시피 -->
+        <!-- oven 을 사용하는 레시피 -->
         <div class="oven">
             <a href="/baking/bread.html" target="_blank" >휘낭시에</a>
         </div>
-
+        <!-- mini oven 을 사용하는 레시피 -->
         <div class="mini">
             <a>mini oven</a>
         </div>
-
+        <!-- no oven -->
         <div class="no">
             <a>no oven</a>
         </div>
     </div>
 
     <div class="cookie con">
-        <a>cookie</a>
+        <!-- cookie 메뉴 레시피 -->
+        <div class="oven">
+            <a>cookie</a>
+        </div>
+        <div class="mini">
+            <a>mini oven cookie</a>
+        </div>
+        <div class="no">
+            <a>no oven cookie</a>
+        </div>
     </div>
 
     <div class="candy con">
-        <a>candy</a>
+        <!-- candy 메뉴 레시피 -->
+        <div class="oven">
+            <a>oven candy</a>
+        </div>
+        <div class="mini">
+            <a>mini oven</a>
+        </div>
+        <div class="no">
+            <a>no oven</a>
+        </div>
     </div>
 
+    <!-- javascript 외부 링크 설정 -->
     <script type="text/javascript" src="indexjs.js">
     </script>
 
