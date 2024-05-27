@@ -12,7 +12,7 @@
             .engbutton {
                 display: none;
             }
-            div {
+            .con {
                 display: none;
             }
         </style>
@@ -31,59 +31,38 @@
     <h2 class="kr">종류</h2>
     <h2 class="eng">Kind</h2>
 
-    <button class="engbutton" class="bread">bread</button> <button class="engbutton" class="cookie">cookie</button> <button class="engbutton" class="candy">candy</button>
-    <button class="button" class="bread">빵</button> <button class="button" class="cookie">과자</button> <button class="button" class="candy">사탕</button>
+    <button class="engbutton" onclick="clbread()">bread</button> <button class="engbutton" onclick="clcookie()">cookie</button> <button class="engbutton" onclick="clcandy()">candy</button>
+    <button class="button" onclick="clbread()">빵</button> <button class="button" onclick="clcookie()">과자</button> <button class="button" onclick="clcandy()">사탕</button>
     <hr>
     <h2 class="kr">조리도구</h2>
     <h2 class="eng">cooking utensils</h2>
 
-    <button class="engbutton">oven</button> <button class="engbutton">mini oven</button> <button class="engbutton">no oven</button>
-    <button class="button">오븐</button> <button class="button">미니오븐</button> <button class="button">오븐 X</button>
+    <button class="engbutton" onclick="cloven()">oven</button> <button class="engbutton" onclick="clmini()">mini oven</button> <button class="engbutton" onclick="clno()">no oven</button>
+    <button class="button" onclick="cloven()">오븐</button> <button class="button" onclick="clmini()">미니오븐</button> <button class="button" onclick="clno()">오븐 X</button>
     
-    <div>
-    <a href="/baking/bread.html" target="_blank">baking link</a>
+    <div class="bread con">
+        <div class="oven">
+            <a href="/baking/bread.html" target="_blank" >휘낭시에</a>
+        </div>
+
+        <div class="mini">
+            <a>mini oven</a>
+        </div>
+
+        <div class="no">
+            <a>no oven</a>
+        </div>
     </div>
 
-    <script>
+    <div class="cookie con">
+        <a>cookie</a>
+    </div>
 
-        function krlang() {
-            var x = document.getElementsByClassName("engbutton");
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            var y = document.getElementsByClassName("button");
-            for (var i = 0; i < y.length; i++) {
-                y[i].style.display = "inline"; /*inherit*/
-            }
-            var z = document.getElementsByClassName("eng");
-            for (var i = 0; i < z.length; i++) {
-                z[i].style.display = "none";
-            }
-            var a = document.getElementsByClassName("kr");
-            for (var i = 0; i < a.length; i++) {
-                a[i].style.display = "block";
-            }
-        }
+    <div class="candy con">
+        <a>candy</a>
+    </div>
 
-        function englang() {
-            var x = document.getElementsByClassName("button");
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            var y = document.getElementsByClassName("engbutton");
-            for (var i = 0; i < y.length; i++) {
-                y[i].style.display = "inline";
-            }            
-            var z = document.getElementsByClassName("kr");
-            for (var i = 0; i < z.length; i++) {
-                z[i].style.display = "none";
-            }
-            var a = document.getElementsByClassName("eng");
-            for (var i = 0; i < a.length; i++) {
-                a[i].style.display = "block";
-            }
-        }
-
+    <script type="text/javascript" src="indexjs.js">
     </script>
 
     </body>
