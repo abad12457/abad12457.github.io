@@ -1,0 +1,81 @@
+.button {
+    border-radius: 25px;
+    border: 2px solid #00704b;
+    background-color: white;
+    padding: 12.5px 15px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #dcdcdc;
+}
+.button:active {
+    background-color: #a9a9a9;
+}
+.engbutton {
+    border-radius: 25px;
+    border: 2px solid #00704b;
+    background-color: white;
+    padding: 12.5px 15px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+.engbutton:hover {
+    background-color: #d6d6d69f;
+}
+.engbutton:active {
+    background-color: rgb(163, 163, 163);
+}
+div {
+    border: 1.5px solid black;
+    width: 275px;
+    margin-top: 10px;
+    margin-right: inherit;
+}
+.krlang {
+    border-radius: 25px;
+    border: 2px solid #00704b;
+    background-color: white;
+    padding: 12.5px 15px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+.krlang:hover {
+    background-color: #d6d6d69f;
+}
+.krlang:active {
+    background-color: rgb(163, 163, 163);
+}
+.englang {
+    border-radius: 25px;
+    border: 2px solid #00704b;
+    background-color: white;
+    padding: 12.5px 15px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+.englang:hover {
+    background-color: #d6d6d69f;
+}
+.englang:active {
+    background-color: rgb(163, 163, 163);
+}
+.lang {
+    border-radius: 25px;
+    border: 2px solid #00704b;
+    background-color: white;
+    padding: 12.5px 15px;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+.lang:hover {
+    background-color: #d6d6d69f;
+}
+.lang:active {
+    background-color: rgb(163, 163, 163);
+}
