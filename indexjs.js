@@ -1,3 +1,4 @@
+/* 언어 버튼 */
 function krlang() {
     var x = document.getElementsByClassName("engbutton");
     for (var i = 0; i < x.length; i++) {
@@ -36,6 +37,7 @@ function englang() {
     }
 }
 
+/* 종류 버튼 */
 function clbread() {
     var x = document.getElementsByClassName("con")
     for (var i=0;i<x.length;i++) {
@@ -44,6 +46,18 @@ function clbread() {
     var y = document.getElementsByClassName("bread");
     for (var i = 0; i < y.length; i++) {
         y[i].style.display="block";
+    }
+    x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
     }
 }
 
@@ -56,6 +70,18 @@ function clcookie() {
     for (var i=0;i<y.length;i++) {
         y[i].style.display="block";
     }
+    x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
 }
 
 function clcandy() {
@@ -67,5 +93,62 @@ function clcandy() {
     for (var i=0;i<y.length;i++) {
         y[i].style.display="block";
     }
+    x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
 }
 
+/* 조리도구 버튼 */
+function cloven() {
+    var x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+    x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+}
+
+function clmini() {
+    var x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+    x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+}
+
+function clno() {
+    var x=document.getElementsByClassName("no");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="block";
+    }
+    x=document.getElementsByClassName("oven");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+    x=document.getElementsByClassName("mini");
+    for (var i=0;i<x.length;i++) {
+        x[i].style.display="none";
+    }
+}
