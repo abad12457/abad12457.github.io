@@ -152,3 +152,10 @@ function clno() {
         x[i].style.display="none";
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    var contentDiv = document.getElementByClassName("mini");
+    
+    if (!contentDiv.innerHTML.trim()) {
+        contentDiv.innerHTML = "해당되는 레시피가 없습니다.";
+    }
+});
