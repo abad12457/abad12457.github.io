@@ -152,10 +152,14 @@ function clno() {
         x[i].style.display="none";
     }
 }
+
+/* 공백 메뉴칸일 시 해당 메시지 출력 */
 document.addEventListener("DOMContentLoaded", function() {
-    var contentDiv = document.getElementByClassName("mini");
+    var miniElements = document.getElementsByClassName("mini");
     
-    if (!contentDiv.innerHTML.trim()) {
-        contentDiv.innerHTML = "해당되는 레시피가 없습니다.";
+    for (var i = 0; i < miniElements.length; i++) {
+        if (!miniElements[i].innerHTML.trim()) {
+            miniElements[i].innerHTML = "해당되는 레시피가 없습니다.";
+        }
     }
 });
