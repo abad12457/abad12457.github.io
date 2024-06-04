@@ -1,4 +1,7 @@
 var message = "해당되는 레시피가 없습니다.";
+var ovendiv = document.getElementsByClassName("oven");
+var minidiv = document.getElementsByClassName("mini");
+var nodiv = document.getElementsByClassName("no");
 
 /* 언어 버튼 */
 function krlang() {
@@ -62,13 +65,21 @@ function clbread() {
         x[i].style.display="block";
     }
     /* 공백 메뉴칸에 입력된 메세지를 없애는 코드 */
-    var minidiv = document.getElementsByClassName("mini");
-    for(var i=0;i<minidiv.length;i++){        
-    if (minidiv[i].innerHTML.trim()===message) {
-            minidiv[i].innerHTML= "";
+    for(var i=0;i<ovendiv.length;i++){        
+    if (ovendiv[i].innerHTML.trim()===message) {
+            ovendiv[i].innerHTML= "";
             }
-        }
-        
+        } 
+    for(var i=0;i<minidiv.length;i++){        
+            if (minidiv[i].innerHTML.trim()===message) {
+                    minidiv[i].innerHTML= "";
+                    }
+                } 
+                for(var i=0;i<nodiv.length;i++){        
+                    if (nodiv[i].innerHTML.trim()===message) {
+                            nodiv[i].innerHTML= "";
+                            }
+                        } 
 }
 
 
@@ -100,6 +111,21 @@ function clcookie() {
             miniElements[i].innerHTML= "";
             }
         }
+        for(var i=0;i<ovendiv.length;i++){        
+            if (ovendiv[i].innerHTML.trim()===message) {
+                    ovendiv[i].innerHTML= "";
+                    }
+                } 
+            for(var i=0;i<minidiv.length;i++){        
+                    if (minidiv[i].innerHTML.trim()===message) {
+                            minidiv[i].innerHTML= "";
+                            }
+                        } 
+                        for(var i=0;i<nodiv.length;i++){        
+                            if (nodiv[i].innerHTML.trim()===message) {
+                                    nodiv[i].innerHTML= "";
+                                    }
+                                }
 }
 
 function clcandy() {
@@ -123,6 +149,21 @@ function clcandy() {
     for (var i=0;i<x.length;i++) {
         x[i].style.display="block";
     }
+    for(var i=0;i<ovendiv.length;i++){        
+        if (ovendiv[i].innerHTML.trim()===message) {
+                ovendiv[i].innerHTML= "";
+                }
+            } 
+        for(var i=0;i<minidiv.length;i++){        
+                if (minidiv[i].innerHTML.trim()===message) {
+                        minidiv[i].innerHTML= "";
+                        }
+                    } 
+                    for(var i=0;i<nodiv.length;i++){        
+                        if (nodiv[i].innerHTML.trim()===message) {
+                                nodiv[i].innerHTML= "";
+                                }
+                            }
 }
 
 /* 조리도구 버튼 */
