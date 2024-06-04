@@ -25,5 +25,8 @@
     &:active {
         background-color: #a9a9a9;
     }
+}
 
+.explain > p {
+    border-left: 4.5px solid rgb(201, 119, 119);
 }
