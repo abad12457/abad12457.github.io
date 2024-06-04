@@ -105,11 +105,6 @@ function clcookie() {
     for (var i=0;i<x.length;i++) {
         x[i].style.display="block";
     }
-    var miniElements = document.getElementsByClassName("mini");
-    for(var i=0;i<miniElements.length;i++){        
-    if (miniElements[i].innerHTML.trim()===message) {
-            miniElements[i].innerHTML= "";
-            }
         }
         for(var i=0;i<ovendiv.length;i++){        
             if (ovendiv[i].innerHTML.trim()===message) {
@@ -126,7 +121,7 @@ function clcookie() {
                                     nodiv[i].innerHTML= "";
                                     }
                                 }
-}
+
 
 function clcandy() {
     var x = document.getElementsByClassName("con")
@@ -180,6 +175,11 @@ function cloven() {
     for (var i=0;i<x.length;i++) {
         x[i].style.display="none";
     }
+    for (var i = 0; i < ovendiv.length; i++) {
+        if (!ovendiv[i].innerHTML.trim()) {
+            ovendiv[i].innerHTML = message;
+        }
+    }
 }
 
 function clmini() {
@@ -196,13 +196,12 @@ function clmini() {
         x[i].style.display="none";
     }
     /* 공백 메뉴칸일 시 해당 메시지 출력 */
-    var miniElements = document.getElementsByClassName("mini");
-            
-            for (var i = 0; i < miniElements.length; i++) {
-                if (!miniElements[i].innerHTML.trim()) {
-                    miniElements[i].innerHTML = message;
+            for (var i = 0; i < minidiv.length; i++) {
+                if (!minidiv[i].innerHTML.trim()) {
+                    minidiv[i].innerHTML = message;
                 }
             }
+            
 }
 
 function clno() {
@@ -217,6 +216,11 @@ function clno() {
     x=document.getElementsByClassName("mini");
     for (var i=0;i<x.length;i++) {
         x[i].style.display="none";
+    }
+    for (var i = 0; i < nodiv.length; i++) {
+        if (!nodiv[i].innerHTML.trim()) {
+            nodiv[i].innerHTML = message;
+        }
     }
 }
 
