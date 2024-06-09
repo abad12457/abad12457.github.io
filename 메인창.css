@@ -1,6 +1,21 @@
+header {
+    background-color: #15d8be;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #36b5be;
+}
+
 .button {
     border-radius: 25px;
-    border: 2px solid #00704b;
+    border: 2px solid #139469;
     background-color: white;
     padding: 12.5px 15px;
     width: 90px;
@@ -15,7 +30,7 @@
 }
 .engbutton {
     border-radius: 25px;
-    border: 2px solid #00704b;
+    border: 2px solid #139469;
     background-color: white;
     padding: 12.5px 15px;
     width: 90px;
@@ -48,7 +63,7 @@
 }
 .krlang {
     border-radius: 25px;
-    border: 2px solid #00704b;
+    border: 2px solid #139469;
     background-color: white;
     padding: 12.5px 15px;
     width: 90px;
@@ -63,7 +78,7 @@
 }
 .englang {
     border-radius: 25px;
-    border: 2px solid #00704b;
+    border: 2px solid #139469;
     background-color: white;
     padding: 12.5px 15px;
     width: 90px;
@@ -78,7 +93,7 @@
 }
 .lang {
     border-radius: 25px;
-    border: 2px solid #00704b;
+    border: 2px solid #139469;
     background-color: white;
     padding: 12.5px 15px;
     width: 90px;
