@@ -1,3 +1,11 @@
+header {
+    background-color: #15d8be;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .recipe a {
     font-size: 18px;
     font-weight: bold;
@@ -29,4 +37,20 @@
 
 .explain > p {
     border-left: 4.5px solid rgb(201, 119, 119);
+}
+
+.main a {
+    display: block;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main a:hover {
+    background-color: #15d8be;
 }
