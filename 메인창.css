@@ -14,95 +14,105 @@ h2 {
 }
 
 .button {
-    border-radius: 25px;
-    border: 2px solid #139469;
-    background-color: white;
-    padding: 12.5px 15px;
-    width: 90px;
-    text-align: center;
+    background-color: #139469;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .button:hover {
-    background-color: #dcdcdc;
+    background-color: #0d7250;
 }
 .button:active {
-    background-color: #a9a9a9;
+    background-color: #07412e;
 }
 .engbutton {
-    border-radius: 25px;
-    border: 2px solid #139469;
-    background-color: white;
-    padding: 12.5px 15px;
-    width: 90px;
-    text-align: center;
+    background-color: #139469;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .engbutton:hover {
-    background-color: #d6d6d69f;
+    background-color: #0d7250;
 }
 .engbutton:active {
-    background-color: rgb(163, 163, 163);
+    background-color: #07412e;
 }
-.bread {
-    border: 1.5px solid black;
-    width: 275px;
-    margin-top: 10px;
-    margin-right: inherit;
-}
-.cookie {
-    border: 1.5px solid black;
-    width: 275px;
-    margin-top: 10px;
-    margin-right: inherit;
-}
-.candy {
-    border: 1.5px solid black;
-    width: 275px;
-    margin-top: 10px;
-    margin-right: inherit;
-}
+
 .krlang {
-    border-radius: 25px;
-    border: 2px solid #139469;
-    background-color: white;
-    padding: 12.5px 15px;
-    width: 90px;
-    text-align: center;
+    background-color: #139469;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .krlang:hover {
-    background-color: #d6d6d69f;
+    background-color: #0d7250;
 }
 .krlang:active {
-    background-color: rgb(163, 163, 163);
+    background-color: #07412e;
 }
 .englang {
-    border-radius: 25px;
-    border: 2px solid #139469;
-    background-color: white;
-    padding: 12.5px 15px;
-    width: 90px;
-    text-align: center;
+    background-color: #139469;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .englang:hover {
-    background-color: #d6d6d69f;
+    background-color: #0d7250;
 }
 .englang:active {
-    background-color: rgb(163, 163, 163);
+    background-color: #07412e;
 }
 .lang {
-    border-radius: 25px;
-    border: 2px solid #139469;
-    background-color: white;
-    padding: 12.5px 15px;
-    width: 90px;
-    text-align: center;
+    background-color: #139469;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
 .lang:hover {
-    background-color: #d6d6d69f;
+    background-color: #0d7250;
 }
 .lang:active {
-    background-color: rgb(163, 163, 163);
+    background-color: #07412e;
+}
+
+.bread.con, .cookie.con, .candy.con {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.bread.con a, .cookie.con a, .candy.con a {
+    display: block;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bread.con a:hover, .cookie.con a:hover, .candy.con a:hover {
+    background-color: #15d8be;
 }
